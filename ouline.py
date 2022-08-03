@@ -1,4 +1,6 @@
 #import beautifulsoup and request here
+import requests
+
 # functions
 
 def displayJobDetails():
@@ -23,3 +25,5 @@ def main():
     
 if __name__ == '__main__':
     main()
+
+response = requests.request("GET", url, headers=headers, data=payload)
