@@ -57,9 +57,6 @@ def main():
     # Write a code here to get job location and role from user e.g. role = input()
     print("Enter role you want to search")
     role = input()
-    # Complete the missing part of this function here
-    print("Enter role you want to search")
-    role = input()
     location = input("Enter location you want to search\n")
     print("My role is: " + "'" + role + "'" + ' ' +
           "my location is " + "'" + location + "'")
