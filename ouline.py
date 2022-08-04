@@ -48,6 +48,10 @@ def getJobList(role, location):
 # save data in JSON file
 def saveDataInJSON(jobDetails):
     # Complete the missing part of this function here
+    with open('jobDetails.json') as file:
+        save_data_file = json.load(file)
+        save_data_file["jobs"].append(jobDetails)
+        json.dump(save_data_file, file)
     print("Saving data to JSON")
 
 # main function
